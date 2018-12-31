@@ -5,6 +5,9 @@
 
 
 header {
+  position: relative;
+  z-index: 99;
+
   .container {
     display: flex;
   }
@@ -29,6 +32,8 @@ header {
           a {
             margin: 0 10px;
             font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-size: 16px;
           }
         }
       }
@@ -42,7 +47,8 @@ header {
 
 .index {
   &-hero {
-    padding: 100px 0;
+    padding: 0;
+    margin-top: -79px;
 
     .container {
       display: flex;
@@ -74,7 +80,28 @@ header {
 
     &__right {
       order: 1;
+      padding: 30px;
     }
+
+    &__left {
+      &-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      &-item {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        color: #ffffff;
+        min-width: 200px;
+      }
+    }
+  }
+
+  &-tech {
+    padding: 100px 0;
   }
 }
 
