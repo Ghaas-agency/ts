@@ -1,0 +1,12 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --output-style compressed -w src/assets/scss/style.scss src/assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "Akshay Dhiman",
+  "license": "MIT"
+}
