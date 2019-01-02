@@ -2,6 +2,7 @@ html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: $grey-color-light;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $grey-color-dark;
+  max-width: 1880px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 p {

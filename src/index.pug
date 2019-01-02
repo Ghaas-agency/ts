@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Trusting Social
+    title Trusting Social | Credit Scoring 2.0
     link(rel="stylesheet", href="https://rsms.me/inter/inter-ui.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:700,700i")
     link(rel="stylesheet", href="assets/css/style.css")
@@ -18,33 +18,35 @@ html(lang="en")
       .container
         .header-left
           a(href='#')
-            img(src="assets/img/trusting-social-logo.svg", alt="Trusting Social logo")
+            img(src="assets/img/trusting-social-logo.svg", alt="Trusting Social logo", title="Trusting Social")
         .header-right
           ul
             li
-              a(href='#').active Home
+              a(href='https://trustingsocial.com/').active Home
             li
-              a(href='#') Solutions
+              a(href='https://trustingsocial.com/solutions') Solutions
             li
-              a(href='#') Customers
+              a(href='https://trustingsocial.com/customers') Customers
             li
-              a(href='#') Jobs
+              a(href='https://trustingsocial.com/jobs') Jobs
             li
-              a(href='#') About
+              a(href='https://trustingsocial.com/about') About
             li
-              a(href='#') Contact
+              a(href='https://trustingsocial.com/contact') Contact
     main
       section.index-hero
         .container
-          .index-hero__left
-            h1 Credit
-              br
-              | Scoring 
-              br
-              | 2.0
-            p Make lending faster, cheaper, and friendlier.
-          .index-hero__right
-            img(src="assets/img/Home_page_Banner.png", alt="")
+          .index-hero__items
+            .index-hero__left
+              h1 Credit
+                br
+                | Scoring 
+                br
+                | 2.0
+              p Make lending faster, cheaper, and friendlier.
+            .index-hero__right
+              div
+              //- img(src="assets/img/Home_page_Banner.png", alt="")
       section.index-intro
         .container
           .index-intro__right
@@ -52,19 +54,22 @@ html(lang="en")
             p Lenders are dependent on limited credit bureau data and outdated credit scoring technologies.
           .index-intro__left
             .index-intro__left-items
-              .index-intro__left-item(style="background-image: url('assets/img/capture-untapped-markets.png')")
+              .index-intro__left-item(style="background-image: url('assets/img/capture-untapped-markets.jpg')")
                 h3 Capture untapped markets
                 p 4.5 billions consumers worldwide are financially excluded just because banks do not have data on them. Our solution helps banks connect, understand and lend to them.
-              .index-intro__left-item(style="background-image: url('assets/img/streamline-application-process.png')")
+              .index-intro__left-item(style="background-image: url('assets/img/streamline-application-process.jpg')")
                 h3 Streamline application process
                 p Lengthy application form kills conversion. By automatically extract and verify digital data, our solution enables frictionless loan application and real-time credit decisioning.
-              .index-intro__left-item(style="background-image: url('assets/img/reduce-fraud.png')")
+              .index-intro__left-item(style="background-image: url('assets/img/reduce-fraud.jpg')")
                 h3 Reduce fraud and credit risk
                 p Our scoring solution gathers tens of thousands of data points to detect identity fraud, verify application data and evaluate credit risk.
-              .index-intro__left-item(style="background-image: url('assets/img/cut-cost.png')")
+              .index-intro__left-item(style="background-image: url('assets/img/cut-cost.jpg')")
                 h3 Cut costs radically
                 p Using big data, leading US online lenders have cut operating expenses by up to 50% comparing to traditional banking. We now make the technologies available to every lender worldwide.
           // a.button(href="#") Learn More
+        img.index-intro--bg-top(src="assets/img/pattern_2.png")
+        img.index-intro--bg-bottom(src="assets/img/pattern.png")
+        img.index-intro--bg-bottom-left(src="assets/img/pattern2.png")
       section.index-what
         .container
           .index-what__items
@@ -72,7 +77,7 @@ html(lang="en")
               h2 What is TrustingSocial Score?
               p TrustingSocial Score measures creditworthiness of an online identity in three dimensions.
             .index-what__right
-              img(src="assets/img/trusting-social-score.png", alt="")
+              img(src="assets/img/trusting-social-score.png", alt="trusting social score")
           .index-what-features__items
             .index-what-features__item
               img(src="assets/img/authenticity.png", alt="authenticity")
@@ -86,28 +91,29 @@ html(lang="en")
               img(src="assets/img/financial-credibility.png", alt="financial credibility")
               h3 Financial credibility
               p Financial credibility estimates a person's income percentile based on her work history and education.
+        img.index-what--bg-bottom(src="assets/img/pattern1.png")
       section.index-tech
         .container
           h2 Our Technology
           p Our technology was built for scalability, fast deployment and flexibility.
           .index-tech__items
             .index-tech__item
-              img(src="assets/img/massive-social.png", alt="")
+              img(src="assets/img/massive-social.jpg", alt="massive social and web data")
               .index-tech__item-content
                 h3 Massive social and web data
                 p Our global database on people and businesses worldwide enables us to have unprecedented insights on customers.
             .index-tech__item
-              img(src="assets/img/cutting-edge.png", alt="")
+              img(src="assets/img/cutting-edge.jpg", alt="cutting-edge machine learning technologies")
               .index-tech__item-content
                 h3 Cutting-edge machine learning technologies
                 p We apply advanced data science to make sense of complex social data.
             .index-tech__item
-              img(src="assets/img/fast-testing.png", alt="")
+              img(src="assets/img/fast-testing.jpg", alt="fast testing and learning board notes")
               .index-tech__item-content
                 h3 Fast testing and implementation
                 p You can get up and running with our pilot program in one day. See the value of social data to your business before subscribing to our solution.
             .index-tech__item
-              img(src="assets/img/customizable.png", alt="")
+              img(src="assets/img/customizable.jpg", alt="office desk work")
               .index-tech__item-content
                 h3 Customizable to your need
                 p Our platform is flexible with modules tailored to social marketing, sale lead scoring, personalized offerings, and credit risk.
@@ -115,11 +121,17 @@ html(lang="en")
       .container
         img.footer-logo(src="assets/img/trusting-social-logo.svg", alt="trusting social logo", title="Trusting Social")
         p 
-          small &copy; 2019 Trusting Social
+          small &copy; 
+            span#current-year
+            | Trusting Social
         .footer-social-items
-          a(href="https://www.facebook.com", target="_blank", rel="noopener noreferrer")
+          a(href="https://www.facebook.com/trustingsocial", target="_blank", rel="noopener noreferrer")
             img(src="assets/img/facebook-circle-black.svg", alt="facebook logo")
-          a(href="", target="_blank", rel="noopener noreferrer")
+          a(href="https://twitter.com/TrustingSocial", target="_blank", rel="noopener noreferrer")
             img(src="assets/img/twitter-circle-black.svg", alt="twitter logo")
-          a(href="", target="_blank", rel="noopener noreferrer")
-            img(src="assets/img/linkedin-circle-black.svg", alt="")
+          a(href="https://www.linkedin.com/company/trustingsocial", target="_blank", rel="noopener noreferrer")
+            img(src="assets/img/linkedin-circle-black.svg", alt="linkedin logo")
+
+    script.
+      var d = new Date();
+      document.getElementById('current-year').innerHTML = d.getFullYear() + " ";
