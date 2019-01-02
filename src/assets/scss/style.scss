@@ -42,6 +42,10 @@ header {
         max-width: 150px;
         padding: 10px 0;
         vertical-align: middle;
+
+        @media only screen and (min-width: 767px) {
+          filter: unset !important;
+        }
       }
 
       @media only screen and (max-width: 767px) {

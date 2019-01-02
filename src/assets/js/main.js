@@ -39,6 +39,7 @@ function matchMediaQuery(mm) {
     headerList.style.display = "none";
   } else {
     headerList.style.display = "block";
+    tsLogo.style.filter = "unset";
   }
 }
 
