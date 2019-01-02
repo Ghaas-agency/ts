@@ -6,8 +6,12 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Trusting Social
     link(rel="stylesheet", href="https://rsms.me/inter/inter-ui.css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:700,700i")
     link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="shortcut icon", href="assets/img/ts-icon-16.png")
+    link(rel="apple-touch-icon", href="assets/img/ts-icon-57.png")
+    link(rel="apple-touch-icon", href="assets/img/ts-icon-72.png", sizes="72x72")
+    link(rel="apple-touch-icon", href="assets/img/ts-icon-114.png", sizes="114x114")
   body
 
     header
@@ -18,7 +22,7 @@ html(lang="en")
         .header-right
           ul
             li
-              a(href='#') Home
+              a(href='#').active Home
             li
               a(href='#') Solutions
             li
@@ -33,7 +37,11 @@ html(lang="en")
       section.index-hero
         .container
           .index-hero__left
-            h1 Credit Scoring 2.0
+            h1 Credit
+              br
+              | Scoring 
+              br
+              | 2.0
             p Make lending faster, cheaper, and friendlier.
           .index-hero__right
             img(src="assets/img/Home_page_Banner.png", alt="")
@@ -47,7 +55,7 @@ html(lang="en")
               .index-intro__left-item(style="background-image: url('assets/img/capture-untapped-markets.png')")
                 h3 Capture untapped markets
                 p 4.5 billions consumers worldwide are financially excluded just because banks do not have data on them. Our solution helps banks connect, understand and lend to them.
-              .index-intro__left-item(style="background-image: url('assets/img/capture-untapped-markets.png')")
+              .index-intro__left-item(style="background-image: url('assets/img/streamline-application-process.png')")
                 h3 Streamline application process
                 p Lengthy application form kills conversion. By automatically extract and verify digital data, our solution enables frictionless loan application and real-time credit decisioning.
               .index-intro__left-item(style="background-image: url('assets/img/reduce-fraud.png')")
@@ -64,18 +72,18 @@ html(lang="en")
               h2 What is TrustingSocial Score?
               p TrustingSocial Score measures creditworthiness of an online identity in three dimensions.
             .index-what__right
-              img(src="", alt="")
+              img(src="assets/img/trusting-social-score.png", alt="")
           .index-what-features__items
             .index-what-features__item
-              img(src="", alt="")
+              img(src="assets/img/authenticity.png", alt="authenticity")
               h3 Authenticity
               p Authenticity measures how likely an online identity is real and trustworthy. Our fraud detection algorithm makes sure there is no suspicious behaviors.
             .index-what-features__item
-              img(src="", alt="")
+              img(src="assets/img/network-quality.png", alt="network quality")
               h3 Network quality
               p Network quality measures the depth of the network, based on interactions with other people and their background.
             .index-what-features__item
-              img(src="", alt="")
+              img(src="assets/img/financial-credibility.png", alt="financial credibility")
               h3 Financial credibility
               p Financial credibility estimates a person's income percentile based on her work history and education.
       section.index-tech
@@ -84,34 +92,34 @@ html(lang="en")
           p Our technology was built for scalability, fast deployment and flexibility.
           .index-tech__items
             .index-tech__item
-              img(src="", alt="")
+              img(src="assets/img/massive-social.png", alt="")
               .index-tech__item-content
                 h3 Massive social and web data
                 p Our global database on people and businesses worldwide enables us to have unprecedented insights on customers.
             .index-tech__item
-              img(src="", alt="")
+              img(src="assets/img/cutting-edge.png", alt="")
               .index-tech__item-content
                 h3 Cutting-edge machine learning technologies
                 p We apply advanced data science to make sense of complex social data.
             .index-tech__item
-              img(src="", alt="")
+              img(src="assets/img/fast-testing.png", alt="")
               .index-tech__item-content
                 h3 Fast testing and implementation
                 p You can get up and running with our pilot program in one day. See the value of social data to your business before subscribing to our solution.
             .index-tech__item
-              img(src="", alt="")
+              img(src="assets/img/customizable.png", alt="")
               .index-tech__item-content
                 h3 Customizable to your need
                 p Our platform is flexible with modules tailored to social marketing, sale lead scoring, personalized offerings, and credit risk.
     footer
       .container
-        img(src="", alt="")
+        img.footer-logo(src="assets/img/trusting-social-logo.svg", alt="trusting social logo", title="Trusting Social")
         p 
           small &copy; 2019 Trusting Social
         .footer-social-items
-          .footer-social-item
-            img(src="", alt="")
-          .footer-social-item
-            img(src="", alt="")
-          .footer-social-item
-            img(src="", alt="")
+          a(href="https://www.facebook.com", target="_blank", rel="noopener noreferrer")
+            img(src="assets/img/facebook-circle-black.svg", alt="facebook logo")
+          a(href="", target="_blank", rel="noopener noreferrer")
+            img(src="assets/img/twitter-circle-black.svg", alt="twitter logo")
+          a(href="", target="_blank", rel="noopener noreferrer")
+            img(src="assets/img/linkedin-circle-black.svg", alt="")

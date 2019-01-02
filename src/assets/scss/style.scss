@@ -16,6 +16,12 @@ header {
       flex: 1;
     }
 
+    &-left {
+      img {
+        margin: 0 -15px;
+      }
+    }
+
     &-right {
       text-align: right;
 
@@ -34,6 +40,11 @@ header {
             font-family: 'Montserrat', sans-serif;
             color: #ffffff;
             font-size: 16px;
+            text-decoration: none;
+
+            &.active {
+              border-bottom: 1px solid $blue;
+            }
           }
         }
       }
@@ -61,6 +72,10 @@ header {
     &__right {
       flex: 1;
     }
+
+    h1 {
+      font-size: 72px;
+    }
   }
 
   &-intro {
@@ -80,7 +95,15 @@ header {
 
     &__right {
       order: 1;
-      padding: 30px;
+
+      h2, p {
+        margin-left: 5%;
+        margin-right: 10%;
+      }
+
+      h2 {
+        margin-right: 30%;
+      }
     }
 
     &__left {
@@ -92,16 +115,145 @@ header {
 
       &-item {
         flex: 1;
-        padding: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: overlay;
+        padding: 40px 30px;
         margin: 10px;
-        color: #ffffff;
         min-width: 200px;
+        color: #ffffff;
+        
+        p {
+          color: $grey-color-light;
+          margin: 0
+        }
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      &__right {
+        order: 1;
+        min-width: 100%;
+      }
+      
+      &__left {
+        order: 2;
+        width: 100%;
+      }
+    }    
+  }
+
+  &-what {
+    padding: 100px 0;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    &__left,
+    &__right {
+      flex: 1;
+    }
+
+    &__right {
+      text-align: center;
+    }
+
+    &-features {
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 0 10%;
+      }
+
+      &__item {
+        flex: 1;
+        padding: 0 15px;
+        text-align: center;
+
+        img {
+          max-height: 85px;
+          object-fit: contain;
+          width: 100%;
+          margin-bottom: 30px;
+        }
       }
     }
   }
 
   &-tech {
     padding: 100px 0;
+    background-color: $blue;
+    color: #ffffff;
+    background-image: url('../img/technology-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    p {
+      color: $grey-color-light;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -20px;
+      color: initial;
+    }
+
+    &__item {
+      flex: 1;
+      min-width: 150px;
+      margin: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.5);
+
+      p {
+        color: $text;
+      }
+
+      &-content {
+        padding: 20px 30px;
+      }
+    }
   }
 }
 
+footer {
+  background-color: $grey-color-dark;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+
+  img.footer-logo {
+    filter: grayscale(100%) brightness(7) opacity(0.8);
+    max-width: 200px;
+    margin: -10px;
+  }
+
+  p {
+    color: darken(#ffffff, 25%);
+    margin-bottom: 20px;
+  }
+
+  .footer-social-items {
+    img {
+      margin: 0 10px;
+      max-width: 30px;
+      filter: invert(50%);
+
+      &:hover, &:focus {
+        filter: invert(70%);
+      }
+    }
+  }
+}
