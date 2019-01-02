@@ -14,25 +14,25 @@ html(lang="en")
     link(rel="apple-touch-icon", href="assets/img/ts-icon-114.png", sizes="114x114")
   body
 
-    header
+    header#header
       .container
         .header-left
           a(href='#')
-            img(src="assets/img/trusting-social-logo.svg", alt="Trusting Social logo", title="Trusting Social")
+            img(src="assets/img/trusting-social-logo.png", alt="Trusting Social logo", title="Trusting Social")
         .header-right
           ul
             li
-              a(href='https://trustingsocial.com/').active Home
+              a(href='https://trustingsocial.com/').active.menu-link Home
             li
-              a(href='https://trustingsocial.com/solutions') Solutions
+              a(href='https://trustingsocial.com/solutions').menu-link Solutions
             li
-              a(href='https://trustingsocial.com/customers') Customers
+              a(href='https://trustingsocial.com/customers').menu-link Customers
             li
-              a(href='https://trustingsocial.com/jobs') Jobs
+              a(href='https://trustingsocial.com/jobs').menu-link Jobs
             li
-              a(href='https://trustingsocial.com/about') About
+              a(href='https://trustingsocial.com/about').menu-link About
             li
-              a(href='https://trustingsocial.com/contact') Contact
+              a(href='https://trustingsocial.com/contact').menu-link Contact
     main
       section.index-hero
         .container
@@ -119,7 +119,7 @@ html(lang="en")
                 p Our platform is flexible with modules tailored to social marketing, sale lead scoring, personalized offerings, and credit risk.
     footer
       .container
-        img.footer-logo(src="assets/img/trusting-social-logo.svg", alt="trusting social logo", title="Trusting Social")
+        img.footer-logo(src="assets/img/trusting-social-logo.png", alt="trusting social logo", title="Trusting Social")
         p 
           small &copy; 
             span#current-year
@@ -132,6 +132,4 @@ html(lang="en")
           a(href="https://www.linkedin.com/company/trustingsocial", target="_blank", rel="noopener noreferrer")
             img(src="assets/img/linkedin-circle-black.svg", alt="linkedin logo")
 
-    script.
-      var d = new Date();
-      document.getElementById('current-year').innerHTML = d.getFullYear() + " ";
+    script(src="assets/js/main.js")
