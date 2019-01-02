@@ -16,11 +16,12 @@ html(lang="en")
 
     header#header
       .container
+        img(src="assets/img/menu.svg", alt="menu").header-menu-icon
         .header-left
-          a(href='#')
-            img(src="assets/img/trusting-social-logo.png", alt="Trusting Social logo", title="Trusting Social")
+          a(href='https://trustingsocial.com/')
+            img.header-logo(src="assets/img/trusting-social-logo.png", alt="Trusting Social logo", title="Trusting Social")
         .header-right
-          ul
+          ul#header-list
             li
               a(href='https://trustingsocial.com/').active.menu-link Home
             li
