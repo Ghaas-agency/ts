@@ -65,9 +65,11 @@ window.onclick = function(e) {
     if (menuToggle) {
       headerList.style.display = "block";
       menuToggle = false;
+      e.target.src = "assets/img/close.svg";
     } else {
       headerList.style.display = "none";
       menuToggle = true;
+      e.target.src = "assets/img/menu.svg";
     }
   }
 }
