@@ -3,7 +3,6 @@
 @import 'globals';
 @import 'components';
 
-
 header {
   position: fixed;
   z-index: 9999;
@@ -49,7 +48,6 @@ header {
       }
 
       @media only screen and (max-width: 767px) {
-        text-align: center;
         min-width: 100%;
       }
     }
@@ -101,7 +99,7 @@ header {
           min-width: 150px;
           border-top: 1px solid #ccc;
           animation-name: menumobile;
-          animation-duration: 0.2s;
+          animation-duration: 0.1s;
           transform-origin: right;
   
           li {
@@ -128,7 +126,7 @@ header {
             }
           }
         }
-      }      
+      }
     }
   }
 
@@ -139,7 +137,7 @@ header {
 
 @keyframes menumobile {
   from {
-    opacity: 0.5;
+    opacity: 0.75;
     transform: translateY(-30px) scale(0.9);
   }
   

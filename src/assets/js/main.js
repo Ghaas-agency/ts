@@ -1,3 +1,4 @@
+/* Get current year for the footer copyright area. */
 var d = new Date();
 document.getElementById('current-year').innerHTML = d.getFullYear() + " ";
 
